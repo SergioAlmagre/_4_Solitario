@@ -36,7 +36,7 @@ fun main(args: Array<String>) {
                 }
             }
         }
-        if (!monton2.isEmpty()) {
+        if (!monton2.isEmpty() && !cartaAcoplada) {
             if (cartaElegida!!.color != monton2.peek()!!.color && cartaElegida.numero == monton2.peek()!!.numero - 1){
                 monton2.push(cartaElegida)
                 cartaAcoplada = true
